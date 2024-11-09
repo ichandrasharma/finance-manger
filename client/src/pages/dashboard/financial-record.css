@@ -1,0 +1,100 @@
+/* Centered container for the financial record content */
+.dashboard-container {
+  width: 80%;
+}
+
+h1, h2 {
+  color: var(--header-color);
+  text-align: center;
+  margin-top: 0;
+}
+
+/* Form and list container */
+.form-container,
+.list-container {
+  margin-bottom: 20px;
+}
+
+/* Button styles */
+.button {
+  background-color: var(--primary-color);
+  color: var(--button-text-color);
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--hover-color);
+}
+
+.button-delete {
+  background-color: var(--accent-color);
+  color: var(--button-text-color);
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-delete:hover {
+  background-color: darkred;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  background-color: transparent;
+  border: 1px solid var(--input-border-color);
+  border-radius: 5px;
+  color: var(--text-color);
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.table-container {
+  margin: 20px;
+  overflow-x: auto; /* Enables horizontal scrolling if the table is too wide */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.table th, .table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+  color: var(--text-color);
+}
+
+.table th {
+  background-color: var(--table-header-bg);
+  color: white;
+  font-size: 16px;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table tbody tr:hover {
+  background-color: var(--table-row-hover-bg);
+}
